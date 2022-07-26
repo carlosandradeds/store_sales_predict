@@ -172,6 +172,7 @@ Importante análisar que existem lojas com um grau de erro muito alto e que não
 O desempenho geral do modelo pode ser representado nos gráficos abaixo, onde:
 
 error_rate = predictions/sales
+
 error = sales - predictions
 
 
@@ -192,11 +193,14 @@ O modelo foi então colocado em produção por meio de um chat_bot do Telegram. 
 
 ![app](https://github.com/carlosandradeds/store_sales_predict/blob/main/img/app.png)
 
-Chat bot em funcionamento: 
 
-![bot](https://github.com/carlosandradeds/store_sales_predict/blob/main/img/app.gif)
+Chat bot em funcionamento: <br>
+
+![bot](https://github.com/carlosandradeds/store_sales_predict/blob/main/img/app.gif) <br />
+
 
 QR Code para acesso ao app:
+
 
 ![qr](https://github.com/carlosandradeds/store_sales_predict/blob/main/img/qr.jpg)
 
