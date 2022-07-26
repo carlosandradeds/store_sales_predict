@@ -198,6 +198,6 @@ Chat bot em funcionamento:
 
 QR Code para acesso ao app:
 
-[qr](https://github.com/carlosandradeds/store_sales_predict/blob/main/img/qr.jpg)
+![qr](https://github.com/carlosandradeds/store_sales_predict/blob/main/img/qr.jpg)
 
 @rosmmann_kaka_bot
