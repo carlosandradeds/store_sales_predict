@@ -190,5 +190,14 @@ Como a análise e aplicação demanda muito tempo e muitos detalhes é preciso u
 
 O modelo foi então colocado em produção por meio de um chat_bot do Telegram. Para o funcionamento foi necessário além do modelo a criação de uma classe em Python com todo pipeline de processamento de dados um manipulador de API e um aplicativo para gerenciar as mensagens. Todos os arquivos foram hospedados no Heroku. É possivel entender com o esquema a seguir:
 
-![app]((https://github.com/carlosandradeds/store_sales_predict/blob/main/img/app.png))
+![app](https://github.com/carlosandradeds/store_sales_predict/blob/main/img/app.png)
 
+Chat bot em funcionamento: 
+
+![bot](https://github.com/carlosandradeds/store_sales_predict/blob/main/img/app.gif)
+
+QR Code para acesso ao app:
+
+[qr](https://github.com/carlosandradeds/store_sales_predict/blob/main/img/qr.jpg)
+
+@rosmmann_kaka_bot
