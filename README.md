@@ -40,6 +40,16 @@
 
 # 3. Solução
 
-A resolução do problema seguiu os passos da metodologia CRISP-DM, que consiste em uma abordagem cíclica, onde podemos agilizar os processos e gerando resultados mais rápido.
+A resolução do problema seguiu os passos da metodologia CRISP-DM, que consiste em uma abordagem cíclica, onde podemos agilizar os processos e entregar resultados mais rápido.
 
 ![CRISP-DM](https://miro.medium.com/max/1400/1*z0U0taZoignUB7aQ4ZsOtg.png)
+
+## Coleta de Dados e Entendimento
+O primeiro passo foi coletar e entender os dados do Kaggle. Logo após foi feita a limpeza dos dados e o tratamento dos dados faltantes e exclusão da coluna de clientes, já que devemos prever as vendas, não podemos conhecer o número de clientes.
+
+## Exploração dos Dados
+Para uma melhor exploração dos dados, foi criado um mapa mental de hipoteses, onde vai ser o guia para criação das hipóteses e assim será possivel explorar os dados com mais eficiência entendendo quais os atributos mais importantes.
+
+![mind-map](https://github.com/carlosandradeds/store_sales_predict/blob/main/img/mindmap.png)
+
+## 
