@@ -52,4 +52,35 @@ Para uma melhor exploração dos dados, foi criado um mapa mental de hipoteses, 
 
 ![mind-map](https://github.com/carlosandradeds/store_sales_predict/blob/main/img/mindmap.png)
 
+Após a criação do mapa foram criadas diversas hipóteses e selecionada as melhores para melhor exploração dos dados:
+
+1.Lojas com maior sortimentos deveriam vender mais.
+
+2. Lojas com competidores mais próximos deveriam vender menos.
+
+3. Lojas com competidores à mais tempo deveriam vendem mais.
+
+4. Lojas com promoções ativas por mais tempo deveriam vender mais.
+
+5. Lojas com mais dias de promoção deveriam vender mais.
+
+7. Lojas com mais promoções consecutivas deveriam vender mais.
+
+8. Lojas abertas durante o feriado de Natal deveriam vender mais.
+
+9. Lojas deveriam vender mais ao longo dos anos.
+
+10. Lojas deveriam vender mais no segundo semestre do ano.
+
+11. Lojas deveriam vender mais depois do dia 10 de cada mês.
+
+12. Lojas deveriam vender menos aos finais de semana.
+
+13. Lojas deveriam vender menos durante os feriados escolares.
+
+A análise detalhada das hipóteses encontra-se na pasta de notebooks nesse repositório.
+
+Abaixo a análise de alguns insights gerados:
+
+
 ## 
