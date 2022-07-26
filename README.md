@@ -102,6 +102,7 @@ A partir dá análise dessa hipótese pode-se perceber uma tendência no aumento
 
 ### 3. H10. Lojas deveriam vender menos aos finais de semana
 ***Verdadeira***
+
 Com base na análise da hipotese é possivel notar que as vendas nos finais de semana apresentam um numero de vendas baixissimo se comparado com as vendas no meio da semana:
 
 ![h10](https://github.com/carlosandradeds/store_sales_predict/blob/main/img/h10.png)
