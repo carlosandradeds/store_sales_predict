@@ -42,4 +42,4 @@
 
 A resolução do problema seguiu os passos da metodologia CRISP-DM, que consiste em uma abordagem cíclica, onde podemos agilizar os processos e gerando resultados mais rápido.
 
-[CRISP-DM](https://miro.medium.com/max/988/0*tA5OjppLK627FfFo)
+[CRISP-DM](https://miro.medium.com/max/988/0*tA5OjppLK627FfFo.jpg)
