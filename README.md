@@ -54,7 +54,7 @@ Para uma melhor exploração dos dados, foi criado um mapa mental de hipoteses, 
 
 Após a criação do mapa foram criadas diversas hipóteses e selecionada as melhores para melhor exploração dos dados:
 
-1.Lojas com maior sortimentos deveriam vender mais.
+1. Lojas com maior sortimentos deveriam vender mais.
 
 2. Lojas com competidores mais próximos deveriam vender menos.
 
@@ -81,6 +81,12 @@ Após a criação do mapa foram criadas diversas hipóteses e selecionada as mel
 A análise detalhada das hipóteses encontra-se na pasta de notebooks nesse repositório.
 
 Abaixo a análise de alguns insights gerados:
+
+### 1. H1. Lojas com maior sortimento deveiram vender mais
+
+Essa análise se feita de maneira errada pode gerar insights irreais. Se análisarmos a soma de vendas as lojas com menos sortimentos deveriam vender menos, porém temos menor número de lojas com mais sortimento, dessa forma devemos análisar a média de vendas de cada tipo de loja.
+
+***Soma***
 
 
 ## 
