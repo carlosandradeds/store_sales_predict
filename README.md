@@ -107,4 +107,55 @@ Com base na análise da hipotese é possivel notar que as vendas nos finais de s
 
 ![h10](https://github.com/carlosandradeds/store_sales_predict/blob/main/img/h101.png)
 
+## Preparação dos Dados
+
+Nessa etapa os dados foram re-escalonados os dados para que os dados ficassem adequados para uma boa previsão gerando numeros mais fáceis de serem compreendidos, assim como a transformação das varáveis categóricas em variáveis numéricas.
+
+## Seleção de features
+
+Foram selecionadas as melhores features para utilização no modelo usando o algortimo do Boruta, com um olhar análitico é possivel avaliar as escolhas do algortimo e assim escolher as melhores features para desenvolvimento do modelo.
+
+## Machine learning modeling
+
+Quatro diferentes tipos de modelos foram testados (linear regression, regularized linear regression - lasso, random forest and XGBoost) e foram avaliadas utilizando o método de cross validation.
+
+Começou com uma parcela reduzida do banco de dados, onde foram utilizadas as ultimas 6 semanas para teste dos modelos. Dessa forma foram feitas algumas iterações os modelos foram comparados a partir da média. Então chegamos ao seguintes dados comparativos:
+
+|Model|MAE|MAPE|RMSE|
+|-----------------------------|------------------|-------------|------------------|
+|Random forest regressor      |837.94 +/- 218.82 |0.12 +/- 0.02|1257.19 +/- 319.82|
+|XGBoost regressor            |1063.51 +/- 178.21|0.15 +/- 0.02|1518.89 +/- 241.61|
+|Linear regression            |2081.73 +/- 295.63|0.3 +/- 0.02 |2952.52 +/- 468.37|
+|Regularized linear regression|2116.38 +/- 341.50|0.29 +/- 0.01|2952.52 +/- 241.61|
+
+A partir dos dados gerados é possivel análisar que os dados da Random Forest apresentam melhores condições, mas como o XGBoost apresentou dados também satisfátorios e tem uma melhor otimização dos recursos consumindo menos espaço em disco foi escolhido esse modelo para desenvolvimento do projeto.
+
+Utilizando o procedimento de busca aleatória, com valores diferentes para os parâmetros "n_estimators", "eta", "max_depth", "subsample", "colsample_bytree" e "min_child_weight", foram realizadas 5 iterações diferentes do XGBoost, todas avaliadas por cross validation. Os valores de MAE, MAPE e RMSE estão detalhados nos notebooks para todas as iterações.
+O desempenho do modelo escolhido, considerando desempenho e tamanho (tendo em conta a operacionalidade em produção), foi:
+
+|Parameter | Value |
+|----------|-------|
+| n_estimators | 500 |
+| eta | 0.3 |
+| max_depth | 9 |
+| subsample	| 0.1 |
+| colsample_bytree | 0.7 |
+| min_child_weight |15 |
+
+|Model|MAE|MAPE|RMSE|
+|----------------|----------------|-------------|-----------------|
+XGBoost regressor|793.01 |0.11|1128.65|
+
+
+# 4. Business Perfomance
+
+Agora com o modelo treinado, é possivel traduzir a solução para o negócio trazendo os dados com o seu erro médio para buscar o melhor e o pior cenário com base nos dados:
+
+| store	| predictions | worst_scenario | best_scenario | MAE | MAPE |
+|-------|-------------|----------------|---------------|-----|------|
+|337|	200223.234375|	199906.411324|	200540.057426|	316.823051|	0.057442|
+|464	|384747.281250	|384094.960014	|385399.602486	|652.321236|	0.059325|
+|1|	159690.593750|	159419.219641|	159961.967859|	271.374109|	0.060676|
+|667	|321662.656250	|321126.230442	|322199.082058	|536.425808	|0.062828|
+|929|	216773.125000	|216398.962020|	217147.287980	|374.162980	|0.064222|
 
