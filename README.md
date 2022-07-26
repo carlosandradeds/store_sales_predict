@@ -159,3 +159,36 @@ Agora com o modelo treinado, é possivel traduzir a solução para o negócio tr
 |667	|321662.656250	|321126.230442	|322199.082058	|536.425808	|0.062828|
 |929|	216773.125000	|216398.962020|	217147.287980	|374.162980	|0.064222|
 
+Importante análisar que existem lojas com um grau de erro muito alto e que não podem ser utilizados como modelo para tomada de decisão no momento, dessa forma ficando para o próximo ciclo do CRISP, análisar o que ser feito com lojas com um alto grau de incerteza:
+
+| store	| predictions | worst_scenario | best_scenario | MAE | MAPE |
+|-------|-------------|----------------|---------------|-----|------|
+|292|	108202.250000	|104740.518979	|111663.981021|	3461.731021|	0.599689|
+|909|	227634.453125|	219581.676312	|235687.229938|	8052.776813|	0.543349|
+|876|	203944.828125|	200224.689772	|207664.966478|	3720.138353|	0.308157|
+|649|	160538.250000|	159669.154716	|161407.345284|	869.095284	|0.294179|
+|286|	161908.843750|	161153.949720	|162663.737780|	754.894030	|0.272756|
+
+O desempenho geral do modelo pode ser representado nos gráficos abaixo, onde:
+
+error_rate = predictions/sales
+error = sales - predictions
+
+
+![error](https://github.com/carlosandradeds/store_sales_predict/blob/main/img/error.png)
+
+No geral, o modelo teve um bom desempenho.
+Mas é sempre possível melhorá-lo; seguindo a metodologia CRISP, caso seja necessária uma nova rodada, pode-se considerar treinar as lojas individualmente ou até mesmo um grupo menor delas, por exemplo. Outra possibilidade é explorar outros modelos de aprendizado de máquina.
+No entanto, deve-se levar em consideração o prazo de entrega das previsões e o desempenho do modelo já em produção. Algo muito pesado ou demorado também é impraticável, mesmo que tenha um desempenho excepcional.
+É um trade-off que deve estar intimamente alinhado com a gestão da empresa.
+Mais detalhes sobre o desempenho dos negócios estão disponíveis no notebook.
+
+O modelo teve um bom desempenho, mas é sempre possível melhorá-lo. Como estamos utilizando a metódologia CRISP, é possível uma nova rodada de análise e desempenho e observar as lojas que precisam de um tratamento diferenciado para um melhor retorno de informações a cerca de cada loja.
+Como a análise e aplicação demanda muito tempo e muitos detalhes é preciso uma entrega de resultados o mais rapido possivel, então a primeira rodada foi realizada e assim nos próximos ciclos é possivel adaptar determinados parametros e melhorar assim a entrega dos próximos resultados.
+
+# 5. Modelo em produção
+
+O modelo foi então colocado em produção por meio de um chat_bot do Telegram. Para o funcionamento foi necessário além do modelo a criação de uma classe em Python com todo pipeline de processamento de dados um manipulador de API e um aplicativo para gerenciar as mensagens. Todos os arquivos foram hospedados no Heroku. É possivel entender com o esquema a seguir:
+
+![app]((https://github.com/carlosandradeds/store_sales_predict/blob/main/img/app.png))
+
