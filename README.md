@@ -178,12 +178,6 @@ error = sales - predictions
 
 ![error](https://github.com/carlosandradeds/store_sales_predict/blob/main/img/error.png)
 
-No geral, o modelo teve um bom desempenho.
-Mas é sempre possível melhorá-lo; seguindo a metodologia CRISP, caso seja necessária uma nova rodada, pode-se considerar treinar as lojas individualmente ou até mesmo um grupo menor delas, por exemplo. Outra possibilidade é explorar outros modelos de aprendizado de máquina.
-No entanto, deve-se levar em consideração o prazo de entrega das previsões e o desempenho do modelo já em produção. Algo muito pesado ou demorado também é impraticável, mesmo que tenha um desempenho excepcional.
-É um trade-off que deve estar intimamente alinhado com a gestão da empresa.
-Mais detalhes sobre o desempenho dos negócios estão disponíveis no notebook.
-
 O modelo teve um bom desempenho, mas é sempre possível melhorá-lo. Como estamos utilizando a metódologia CRISP, é possível uma nova rodada de análise e desempenho e observar as lojas que precisam de um tratamento diferenciado para um melhor retorno de informações a cerca de cada loja.
 Como a análise e aplicação demanda muito tempo e muitos detalhes é preciso uma entrega de resultados o mais rapido possivel, então a primeira rodada foi realizada e assim nos próximos ciclos é possivel adaptar determinados parametros e melhorar assim a entrega dos próximos resultados.
 
