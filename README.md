@@ -83,10 +83,27 @@ A análise detalhada das hipóteses encontra-se na pasta de notebooks nesse repo
 Abaixo a análise de alguns insights gerados:
 
 ### 1. H1. Lojas com maior sortimento deveiram vender mais
+***Verdadeiro***
 
-Essa análise se feita de maneira errada pode gerar insights irreais. Se análisarmos a soma de vendas as lojas com menos sortimentos deveriam vender menos, porém temos menor número de lojas com mais sortimento, dessa forma devemos análisar a média de vendas de cada tipo de loja.
+Quando análisamos as vendas médias de cada tipo de loja, podemos perceber que lojas com mais sortimento, tendem a vender mais. É possivel observar com o gráfico de vendas médias por tipo sortimento:
 
-***Soma***
+![h1](https://github.com/carlosandradeds/store_sales_predict/blob/main/img/h1m.png)
+
+Ainda é possivel perceber a tendência de crescimento ao longo do tempo para lojas com maior sortimento:
+
+![h1e](https://github.com/carlosandradeds/store_sales_predict/blob/main/img/h1e.png)
+
+### 2. H7. Lojas deveriam vender mais ao longo dos anos
+***Verdadeira***
+
+A partir dá análise dessa hipótese pode-se perceber uma tendência no aumento de vendas ao longo dos anos, é possivel o entendimento já que a cada ano passado o número de vendas foi maior:
+
+![h7](https://github.com/carlosandradeds/store_sales_predict/blob/main/img/h7.png)
+
+### 3. H10. Lojas deveriam vender menos aos finais de semana
+***Verdadeira***
+Com base na análise da hipotese é possivel notar que as vendas nos finais de semana apresentam um numero de vendas baixissimo se comparado com as vendas no meio da semana:
+
+![h10](https://github.com/carlosandradeds/store_sales_predict/blob/main/img/h10.png)
 
 
-## 
